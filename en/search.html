@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Stock Search | AnCan Electronics</title><link rel="alternate" hreflang="zh-CN" href="../search.html"><link rel="stylesheet" href="../styles.css"></head>
+<body class="search-page">
+  <header class="header"><div class="wrap header-inner"><a class="brand" href="index.html"><div class="mark">AC</div><div><strong>AnCan Electronics</strong><span>AnCan Electronics Co., Ltd.</span></div></a><nav class="nav"><a href="index.html">Home</a><a href="about.html">About</a><a href="products.html">Products & Brands</a><a href="services.html">Services</a><a href="quality.html">Quality</a><a href="news.html">News</a><a href="contact.html">Contact</a></nav><div class="header-actions"><a class="lang" id="langSwitch" href="../search.html">CN</a><a class="quote" href="contact.html">Request Quote</a></div></div></header>
+  <main>
+    <section class="stock-search-hero">
+      <div class="wrap">
+        <form class="stock-search-form" action="search.html">
+          <input id="stockKeyword" name="keyword" placeholder="Enter part number or brand name">
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </section>
+    <section class="stock-results">
+      <div class="wrap">
+        <h1>Search Results: <span id="resultKeyword">"NCV887100D1R2G"</span></h1>
+        <div id="resultsState">
+          <div class="stock-table">
+            <div class="stock-head"><span>Part Number</span><span>Lot / Lead Time (Working Days)</span><span>Quantity</span><span>RFQ</span></div>
+            <article class="stock-row">
+              <div class="stock-part"><div class="stock-box">BOX</div><div><h2>NCV887100D1R2G</h2><p><b>Brand:</b> ONSEMI</p><p><b>Description:</b> N/A</p></div></div>
+              <div class="stock-meta"><p><b>Supplier Level:</b> N/A</p><p><b>Lot:</b> N/A</p><p><b>Lead Time:</b> N/A</p></div>
+              <div class="stock-qty"><p><b>Stock:</b> N/A</p><div class="qty-stepper"><button type="button">-</button><input type="number" min="1" value="1"><button type="button">+</button></div></div>
+              <div><a class="stock-quote" href="contact.html">Request Quote</a></div>
+            </article>
+            <article class="stock-row">
+              <div class="stock-part"><div class="stock-box">BOX</div><div><h2>NCV887100D1R2G</h2><p><b>Brand:</b> onsemi</p><p><b>Description:</b> N/A</p></div></div>
+              <div class="stock-meta"><p><b>Supplier Level:</b> N/A</p><p><b>Lot:</b> N/A</p><p><b>Lead Time:</b> N/A</p></div>
+              <div class="stock-qty"><p><b>Stock:</b> 12180</p><div class="qty-stepper"><button type="button">-</button><input type="number" min="1" value="1"><button type="button">+</button></div></div>
+              <div><a class="stock-quote" href="contact.html">Request Quote</a></div>
+            </article>
+            <article class="stock-row">
+              <div class="stock-part"><div class="stock-box">BOX</div><div><h2>NCV887100D1R2G</h2><p><b>Brand:</b> ONN</p><p><b>Description:</b> N/A</p></div></div>
+              <div class="stock-meta"><p><b>Supplier Level:</b> N/A</p><p><b>Lot:</b> N/A</p><p><b>Lead Time:</b> N/A</p></div>
+              <div class="stock-qty"><p><b>Stock:</b> 5000</p><div class="qty-stepper"><button type="button">-</button><input type="number" min="1" value="1"><button type="button">+</button></div></div>
+              <div><a class="stock-quote" href="contact.html">Request Quote</a></div>
+            </article>
+          </div>
+          <div class="stock-pagination"><span>Total 3</span><a class="disabled" href="#">‹</a><a class="active" href="#">1</a><a class="disabled" href="#">›</a><span>Page 1 of 1, go to</span><select><option>1</option></select><span>page</span><button type="button">Confirm</button></div>
+        </div>
+        <div id="emptyState" class="empty-state" hidden>
+          <div class="empty-visual">BOX</div>
+          <h2>No Search Results</h2>
+          <p>You can submit an inquiry below. Our team will help match inventory, price, and lead time as soon as possible.</p>
+          <form class="empty-inquiry">
+            <div class="form-grid">
+              <input placeholder="Name">
+              <input placeholder="Company">
+              <input placeholder="Email">
+              <input placeholder="Phone / WhatsApp">
+              <input id="emptyPartNo" placeholder="Part Number">
+              <input type="number" min="1" step="1" placeholder="Quantity">
+              <textarea placeholder="Message"></textarea>
+              <button class="submit" type="button" data-toast="Your inquiry has been submitted. Prototype only, no real data was sent.">Submit Inquiry</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="wrap footer-grid"><div><h3>AC AnCan Electronics</h3><p>AnCan Electronics Co., Ltd. was founded in Shenzhen in 2014 and specializes in electronic component distribution and supply chain services.</p></div><div><h3>Quick Links</h3><p><a href="about.html">About Us</a><br><a href="products.html">Products</a><br><a href="services.html">Services</a><br><a href="quality.html">Quality</a></p></div><div><h3>Contact</h3><p>Huaqiangbei Road, Futian District, Shenzhen<br>+86-755-XXXX XXXX<br>sales@ancan-elec.com</p></div><div><h3>Follow Us</h3><div class="qr">QR</div><p>Scan to follow official WeChat</p></div></div><div class="wrap footer-bottom"><span>Copyright 2026 AnCan Electronics Co., Ltd.</span><span><a href="#">Privacy Policy</a>&nbsp;&nbsp;&nbsp; <a href="#">Terms of Service</a></span></div></footer>
+  <div id="toast" class="toast"></div>
+  <script src="../common.js"></script>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const keyword = params.get("keyword") || "NCV887100D1R2G";
+    document.getElementById("stockKeyword").value = keyword;
+    document.getElementById("resultKeyword").textContent = "\"" + keyword + "\"";
+    document.getElementById("langSwitch").href = "../search.html?keyword=" + encodeURIComponent(keyword);
+    const hasResult = keyword.trim().toUpperCase() === "NCV887100D1R2G";
+    document.getElementById("resultsState").hidden = !hasResult;
+    document.getElementById("emptyState").hidden = hasResult;
+    document.getElementById("emptyPartNo").value = keyword;
+    document.querySelectorAll(".qty-stepper").forEach((stepper) => {
+      const input = stepper.querySelector("input");
+      const buttons = stepper.querySelectorAll("button");
+      buttons[0].addEventListener("click", () => input.value = Math.max(1, Number(input.value || 1) - 1));
+      buttons[1].addEventListener("click", () => input.value = Number(input.value || 1) + 1);
+    });
+  </script>
+</body>
+</html>
